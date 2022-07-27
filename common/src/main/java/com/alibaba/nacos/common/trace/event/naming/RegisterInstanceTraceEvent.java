@@ -44,7 +44,7 @@ public class RegisterInstanceTraceEvent extends NamingTraceEvent {
         return instanceIp;
     }
     
-    public int getPort() {
+    public int getInstancePort() {
         return instancePort;
     }
     

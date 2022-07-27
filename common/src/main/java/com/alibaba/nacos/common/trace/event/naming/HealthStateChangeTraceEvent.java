@@ -36,11 +36,11 @@ public class HealthStateChangeTraceEvent extends NamingTraceEvent {
     
     private String  healthStateChangeReason;
     
-    public String getIp() {
+    public String getInstanceIp() {
         return instanceIp;
     }
     
-    public int getPort() {
+    public int getInstancePort() {
         return instancePort;
     }
     
@@ -54,6 +54,10 @@ public class HealthStateChangeTraceEvent extends NamingTraceEvent {
     
     public HealthCheckType getHealthCheckType() {
         return healthCheckType;
+    }
+    
+    public String getHealthStateChangeReason() {
+        return healthStateChangeReason;
     }
     
     public HealthStateChangeTraceEvent(long eventTime, String serviceNamespace, String serviceGroup,

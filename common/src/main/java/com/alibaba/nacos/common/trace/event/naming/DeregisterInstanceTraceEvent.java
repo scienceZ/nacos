@@ -44,11 +44,11 @@ public class DeregisterInstanceTraceEvent extends NamingTraceEvent {
         return rpc;
     }
     
-    public String getIp() {
+    public String getInstanceIp() {
         return instanceIp;
     }
     
-    public int getPort() {
+    public int getInstancePort() {
         return instancePort;
     }
     
